@@ -6,6 +6,23 @@
  * ie: "cat" => "tac"
  */
 
+
+function firstReverse (str) {
+	
+	if (typeof str === 'string') {
+
+		var reversed = str.split('').reverse().join('');
+		return reversed;
+
+	} else {
+
+		return null;
+
+	}
+}
+
+
+
  /** Function: alphaOrder
  * The function will take the str parameter being passed in and
  * return the string in alphabetical order
@@ -14,6 +31,9 @@
  * ie: "cake" => "acek"
  */
 
+ 
+
+
  /** Function: vowelCount
  * The function will take the str parameter being passed in and
  * return the number of vowels in the string
@@ -21,6 +41,12 @@
  * @return {number} count of vowels
  * ie: "oreo" => 3
  */
+
+
+
+
+	
+
 
  /** Function: timeConvert
  * The function will take the str parameter representing the amount of minutes being passed in and
@@ -31,6 +57,8 @@
  * ie: 68 => 1:8
  */
 
+
+
  /** Function: repeatString
  * The function will take in two parameters and repeat a given string (first argument)
  * num times (second argument). Return an empty string if num is a negative number
@@ -39,6 +67,8 @@
  * @return {string} repeated num times
  * i.e repeatString("money", 3) => "moneymoneymoney".
  */
+
+
 
 
 /**
@@ -56,7 +86,7 @@
  */
 
 module.exports = {
-    firstReverse: null,
+    firstReverse: firstReverse,
     alphaOrder: null,
     vowelCount: null,
     timeConvert: null,
