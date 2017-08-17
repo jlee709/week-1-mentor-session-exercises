@@ -84,6 +84,17 @@ function vowelCount(str){
  * ie: 68 => 1:8
  */
 
+ function timeConvert(num){
+ 	if(typeof num !== 'number'){
+ 		return null;
+ 	}else{
+ 		hour = Math.floor(num/60);
+ 		minutes = num - (hour*60);
+ 		return hour + ":" + minutes;
+ 	}
+ }
+ 		
+ 		
 
 
  /** Function: repeatString
@@ -116,6 +127,6 @@ module.exports = {
     firstReverse: firstReverse,
     alphaOrder: alphaOrder,
     vowelCount: vowelCount,
-    timeConvert: null,
+    timeConvert: timeConvert,
     repeatString: null
 }
