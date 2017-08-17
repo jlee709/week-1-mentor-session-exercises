@@ -55,6 +55,20 @@ function firstReverse (str) {
  * ie: "oreo" => 3
  */
 
+function vowelCount(str){
+	var vowels = 'aeoiu';
+	var count = 0;
+
+	if(typeof str !== 'string'){
+		return null;
+	}else{
+		for(i=0; i<=str.length;i++){
+			if(vowels.indexOf(str[i]) !== -1 ){
+				count ++;
+			}
+		} return count;
+	}
+}
 
 
 
@@ -101,7 +115,7 @@ function firstReverse (str) {
 module.exports = {
     firstReverse: firstReverse,
     alphaOrder: alphaOrder,
-    vowelCount: null,
+    vowelCount: vowelCount,
     timeConvert: null,
     repeatString: null
 }
