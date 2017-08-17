@@ -31,7 +31,20 @@ function firstReverse (str) {
  * ie: "cake" => "acek"
  */
 
- 
+ function alphaOrder(str){
+ 	if(typeof str === 'string'){
+ 		
+ 		var sortedString = str.split('').sort().join('');
+ 		
+ 		for(i=0; i<=str.length;i++){
+ 			newString = sortedString;
+ 			return newString;
+ 		}
+ 	} else{
+ 		return null;
+ 	}
+ }
+
 
 
  /** Function: vowelCount
@@ -87,7 +100,7 @@ function firstReverse (str) {
 
 module.exports = {
     firstReverse: firstReverse,
-    alphaOrder: null,
+    alphaOrder: alphaOrder,
     vowelCount: null,
     timeConvert: null,
     repeatString: null
