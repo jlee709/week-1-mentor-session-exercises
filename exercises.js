@@ -109,6 +109,8 @@ function vowelCount(str){
 function repeatString(str, times){
 	if(typeof str !== 'string' || typeof times !== 'number'){
 		return null;
+	}else if(times < 0){
+		return ' ';
 	}else{
 		string = str.repeat(times);
 	} return string;
